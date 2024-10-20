@@ -3,7 +3,7 @@
 ## Подготовка
 
 ```bash
-git clone git clone --recurse-submodules -j8 https://github.com/vial-kb/vial-qmk
+git clone --recurse-submodules -j8 https://github.com/vial-kb/vial-qmk
 cd vial-qmk
 python3 -m pip install qmk
 qmk setup
