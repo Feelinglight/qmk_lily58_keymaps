@@ -5,8 +5,15 @@
 ```bash
 git clone --recurse-submodules -j8 https://github.com/vial-kb/vial-qmk
 cd vial-qmk
+```
+
+```bash
+python3 -m venv venv
 python3 -m pip install qmk
 qmk setup
+```
+
+```bash
 cd keyboards/lily58/rev1/
 rm -rf keymaps
 git clone git@github.com:Feelinglight/qmk_lily58_keymaps.git keymaps
