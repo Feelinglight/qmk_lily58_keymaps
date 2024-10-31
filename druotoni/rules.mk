@@ -1,21 +1,27 @@
-# Build Options
-#   change to "no" to disable the options, or define them in the Makefile in
-#   the appropriate keymap folder that will get included automatically
-#
-RGBLIGHT_ENABLE = no       # Enable WS2812 RGB underlight.
-
-# Bootloader selection
 BOOTLOADER = caterina
 
-# Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
-SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
-# EXTRAFLAGS += -flto
-LTO_ENABLE = yes
-SPACE_CADET_ENABLE = no
+DYNAMIC_MACRO_ENABLE = no
 GRAVE_ESC_ENABLE = no
-MAGIC_ENABLE  = no
+SPACE_CADET_ENABLE = no
 
-# If you want to change the display of OLED, you need to change here
+# https://docs.qmk.fm/config_options#feature-options
+MAGIC_ENABLE = no
+BOOTMAGIC_ENABLE = no
+MOUSEKEY_ENABLE = no
+EXTRAKEY_ENABLE = no
+CONSOLE_ENABLE = no
+COMMAND_ENABLE = no
+NKRO_ENABLE = no
+KEY_OVERRIDE_ENABLE = no
+LEADER_ENABLE = no
+COMBO_ENABLE = no
+
+# Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
+# Breathing sleep LED during USB suspend
+SLEEP_LED_ENABLE = no
+LTO_ENABLE = yes
+# EXTRAFLAGS += -flto
+
 SRC +=  ./lib/rgb_state_reader.c \
         ./burst.c \
         ./navi_logo.c \
@@ -25,4 +31,5 @@ SRC +=  ./lib/rgb_state_reader.c \
         ./ring.c \
         ./boot.c \
         ./draw_helper.c \
+        ./oled.c \
 
