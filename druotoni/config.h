@@ -8,17 +8,17 @@
 // tapping toggle for my layers
 #define TAPPING_TOGGLE 2
 
-#define IS_RIGHT 1
+#define RETRO_TAPPING
+// #define TAPPING_TERM 100
+
+#define IS_LEFT 1
 
 // more space
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
+// #define NO_ACTION_MACRO
+// #define NO_ACTION_FUNCTION
 
-
-#define NO_ACTION_LAYER
-#define NO_ACTION_TAPPING
-#define NO_ACTION_ONESHOT
-
+// #define NO_ACTION_TAPPING
+// #define NO_ACTION_ONESHOT
 
 // ???
 #undef LOCKING_SUPPORT_ENABLE
