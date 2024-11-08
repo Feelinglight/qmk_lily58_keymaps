@@ -1,4 +1,8 @@
 BOOTLOADER = caterina
+COMBO_ENABLE = yes
+
+VIA_ENABLE = no
+VIAL_ENABLE = no
 
 DYNAMIC_MACRO_ENABLE = no
 GRAVE_ESC_ENABLE = no
@@ -14,7 +18,6 @@ COMMAND_ENABLE = no
 NKRO_ENABLE = no
 KEY_OVERRIDE_ENABLE = no
 LEADER_ENABLE = no
-COMBO_ENABLE = no
 
 # Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
 # Breathing sleep LED during USB suspend
