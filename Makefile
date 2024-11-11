@@ -33,4 +33,4 @@ flash_right: build_right
 
 .PHONY: json2c
 json2c:
-	qmk json2c lily58_rev1_lily58_rev1_lily58_rev1_layout_mine.json > druotoni/keymap.c
+	qmk json2c lily58_rev1_layout_mine.json > druotoni/keymap.c
