@@ -19,14 +19,29 @@ rm -rf keymaps
 git clone git@github.com:Feelinglight/qmk_lily58_keymaps.git keymaps
 ```
 
+## Изменение раскладки
+
+Раскладка меняется через [Web UI](https://config.qmk.fm/#/lily58/rev1/LAYOUT)
+
+В конфигуратор загружается файл **./lily58_rev1.json**, меняется раскладка и загружается
+измененная json-конфигурация.
+
+Для генерации c-файла выполнить ``make json2c``
+
+
 ## Прошивка
 
-```bash
-# либо -km druotoni
-qmk compile -kb lily58 -km vial
-# 2 раза нажать reset на клавиатуре (рядом с дисплеем)
-qmk flash -kb -lily58 -km vial
-```
+Левая половинка:
 
-- Прошивать каждую половинку отдельно, без соединения половинок
-- Для druotoni нужно менять макросы IS_LEFT и IS_RIGHT в config.h
+- Подключить type-c к левой половинке
+- Выполнить ``make flash_left``
+- Нажать RESET
+
+Правая половинка:
+
+- Подключить type-c к правой половинке
+- Выполнить ``make flash_right``
+- Нажать RESET
+
+
+
