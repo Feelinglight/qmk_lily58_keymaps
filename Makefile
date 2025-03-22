@@ -14,12 +14,12 @@ build: build_right build_left
 
 
 .PHONY: flash_left
-flash_left: build_left
+flash_left: build_left json2c
 	echo 'Присоединить ЛЕВУЮ половинку и нажать RESET'
 	qmk flash -kb lily58 -km druotoni
 
 .PHONY: flash_right
-flash_right: build_right
+flash_right: build_right  json2c
 	echo 'Присоединить ПРАВУЮ половинку и нажать RESET'
 	qmk flash -kb lily58 -km druotoni
 
