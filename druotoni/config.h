@@ -8,8 +8,10 @@
 // tapping toggle for my layers
 #define TAPPING_TOGGLE 2
 
+#define TAPPING_TERM 200
+#define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 #define RETRO_TAPPING
-// #define TAPPING_TERM 100
 
 #define IS_LEFT 1
 
