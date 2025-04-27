@@ -8,6 +8,8 @@
 
 ![](./images/3.png)
 
+![](./images/4.png)
+
 # Сборка vial для Lily58
 
 ## Подготовка
